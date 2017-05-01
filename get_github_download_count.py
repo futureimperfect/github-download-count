@@ -35,7 +35,7 @@ def main():
             url + '/repos/%s/%s/releases' % (org, repo)
         )
         print 'Current: ' + str(dc) + '\n  Total: ' + str(tdc)
-    except:
+    except IndexError:
         print_usage()
 
 
